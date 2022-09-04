@@ -10,6 +10,10 @@ export async function Camera() {
     video.srcObject = stream
     video.width = consts.width
     video.height = consts.height
+    video.style.width = `100%`
+    video.style.height = `100%`
+    video.style.cursor = 'pointer'
+    video.style.borderRadius = '5px'
     video.autoplay = true
 
     video.onclick = () => {

@@ -1,4 +1,4 @@
 export const consts = {
-    width: 960,
-    height: 720
+    width: 4032,
+    height: 3024
 }

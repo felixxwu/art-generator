@@ -5,7 +5,6 @@ import { Image } from 'image-js'
 export const state = new Proxy(
     {
         image: <Image>null,
-        count: 0,
     },
     {
         get(target, key) {
