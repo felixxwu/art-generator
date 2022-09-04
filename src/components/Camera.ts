@@ -6,7 +6,7 @@ import { consts } from '../consts'
 export async function Camera() {
     const video = e('video')
 
-    let stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+    let stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' }, audio: false })
     video.srcObject = stream
     video.width = consts.width
     video.height = consts.height
